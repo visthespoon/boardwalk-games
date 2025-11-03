@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Describe your page here" />
+    <title>Untitled</title>
+
+    <!-- Favicon (inline empty) -->
+    <link rel="icon" href="data:;base64,=" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Minimal reset */
+        html,body{height:100%}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+        main{padding:1rem;max-width:900px;margin:0 auto}
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <nav aria-label="Primary">
+            <a href="/">Home</a>
+        </nav>
+    </header>
+
+    <main role="main">
+        <h1>Page Title</h1>
+        <p>Start writing your content here.</p>
+    </main>
+
+    <footer role="contentinfo">
+        <small>&copy; <span id="year"></span></small>
+    </footer>
+
+    <script>
+        // Basic JS entry
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
