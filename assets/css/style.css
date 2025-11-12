@@ -1,12 +1,25 @@
 /* google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
 
-body {
-    color: red
-    font-family: 'Inter', sans-serif;
+/* css variables */
+:root {
+    --primary-font: 'Inter', sans-serif;
+    --secondary-font: 'Macondo', cursive;
+    --primary-color: #3a2620; /* dark brown */
 }
 
-h1 {
-    font-family: 'Macondo', cursive;
-    color: blue;
+/* global styles */
+
+body {
+
+    font-family: var(--primary-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
 }   
+
+p {
+   border: 2px solid var(--primary-color)
+}
