@@ -39,6 +39,11 @@ h3 {
     width: 30px;
 }
 
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 /* Header */
 
 #header .lead {
