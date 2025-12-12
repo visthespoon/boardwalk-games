@@ -18,14 +18,13 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: var(--secondary-font);
   color: var(--primary-color);
   text-transform: uppercase;
 }
 
-h4 {
+h3, h4 {
   font-family: var(--secondary-font);
   color: var(--primary-color);
 }
@@ -71,8 +70,32 @@ h2 {
   background-color: transparent;
 }
 
-#new-games .card-footer {
-border-top: 0;
+/* Game library cards */
+
+#new-games .card, #fav-games .card {
+border: none;
+}
+
+
+/* Footer / contact section */
+#contact {
+  color: white;
+  background-color: var(--primary-color);
+  padding-bottom: 3rem;
+} 
+
+
+
+#contact h2 {
+  color: white;
+}
+
+#footer {
+  background-color: var(--primary-color);
+}
+
+#contact .table-dark * {
+  background-color: transparent;
 }
 
 /* grid visualisation CSS for testing */
